@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: ;
+    transition: 1s;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem ;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav, ul{
+    display: flex;
+    gap: 30px;
+}
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+}
+.logo p{
+    font-weight: 600;
+    color: #ce0d0d;
+    font-size: 1.5em;
+}
+nav li{
+    list-style-type: none;
+    padding: .3rem 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: #ce0d0d;
+    font-weight: 600;
+}
+nav li:hover{
+    background-color: gray;
+    border-radius: 30px;
+    transition: background-color 2s linear;
+}
+nav li:hover a{
+    color: #fff;
+}
+hr{
+    border: none;
+    border-top: dotted #ce0d0d 5px;
+    width: 80%;
+    margin: auto;
+}
+main{
+    margin: 3rem 2rem;
+}
+ section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    background-color: #ce0d0d;
+    border-bottom-right-radius: 30px;
+}
+.text{
+    color: #fff;
+    padding-left: 2rem;
+    padding-right:2rem ;
+    text-align: center;
+}
+.image-main{
+    width: 100%;
+}
+.image-main img{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+section p{
+    font-size: 1.3rem;
+}
+button{
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    background-image: linear-gradient(130deg, orange, red);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    opacity: .7;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 3rem 1rem;
+}
+.card{
+    display: grid;
+    color: #fff;
+    padding: 2rem;
+}
+.more{
+    align-self: center;
+    justify-self: center;
+    padding: 2rem;
+    background-color: red;
+    border-radius: 50px;
+}
+.more ~ .hide{
+    display: none;
+}
+.more:hover ~ .hide{
+    display: unset;
+}
+
+button:hover{
+    background: linear-gradient(130deg, red, orange);
+    opacity: 1;
+    transition: 1s;
+}
+@media screen and (max-width:400px) {
+    nav{
+        display: none;
+    }
+    .logo{
+        justify-content: space-between;
+    }
+    section{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .text{
+        color: #ce0d0d;
+        text-align: justify;
+        align-items: center;
+    }
+    .image-main img{
+        width: 100%;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+}
