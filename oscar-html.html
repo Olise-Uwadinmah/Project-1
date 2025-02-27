@@ -5,23 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/oscar-css.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <title>Login Page</title>
     </head>
 
-    <body>
+    <body class="mainPage">
         <header>
             <div class="h1">
                 <h1 class="headOne">CodeCademy</h1>
             </div>
             <div class="container">
-                <div class="tglBtn">
-                    <label class="tglBall" name="click">
-                        <input name="click" class="ckBox" type="checkbox">
-                    </label>
-                </div>
+                <label class="tglBtn" onclick="tglBttn()">
+                    <span class="tglBall">
+                        <input id="ckBox" type="checkbox">
+                    </span>
+                </label>
             </div>
         </header>
 
@@ -39,12 +36,14 @@
                         <input class="user1" id="user2" placeholder="Enter Password" type="password">
                     </div>
                     <p id="testix">
-                        Don`t have an account?
+                        Don't have an account?
                         <a id="linkOne" href="#">Sign up now</a>
                     </p>
                 </div>
             </div>
         </form>
+        <script src="js/script.js">
+        </script>
     </body>
 
     </html>

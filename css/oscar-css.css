@@ -5,6 +5,7 @@
 }
 body {
     background: #000;
+    transition: 0.4s;
 }
 header{
     display: flex;
@@ -24,18 +25,19 @@ header{
     height: 25px;
     border: 2px solid #fff;
     position: relative;
+    background: none;
 }
 .tglBall {
     height: 21px;
     width: 21px;
     margin: 2px;
+    transition: 0.4s;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
 }
-.ckBox {
-    display: ;
-    position: relative;
+#ckBox {
+    display: none;
 }
 .h1 {
     margin-top: 15px;
